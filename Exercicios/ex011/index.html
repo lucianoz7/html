@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/fotoP.PNG" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/fotoM.PNG" type="image/png">
+        <img src="imagens/fotoG.png" alt="Imagem grande">
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <audio src="media/exercicios_modulo-01_ex011_midia_happy-mistake.mp3" controls autoplay></audio>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="media/guanacast-33.mp3" type="audio/mpeg">
+        <source src="media/guanacast-33.ogg" type="audio/ogg">
+        <source src="media/guanacast-33.wav" type="audio/wav">
+    </audio>
+</body>
+</html>
