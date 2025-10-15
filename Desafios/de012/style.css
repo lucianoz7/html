@@ -29,12 +29,26 @@ header > p {
     font-weight: normal
 }
 
-p > a {
+a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-p > a:hover {
+a:hover {
     text-decoration: underline;
+}
+
+main > section {
+    font-size: 3.5vw;
+    font-family: "Sriracha";
+    margin: 70px 0px 70px 35px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 5px;
 }
