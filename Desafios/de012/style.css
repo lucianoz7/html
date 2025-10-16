@@ -7,6 +7,10 @@
     padding: 0%;
 }
 
+html, body {
+    min-height: 100vh;
+}
+
 header {
     background-color: black;
     padding: 30px;
@@ -15,7 +19,7 @@ header {
 
 header > h1 {
     color: white;
-    padding: 15px 0px 0px 0px;
+    padding: 50px 0px 0px 0px;
     font-family: "Passion One", sans-serif; 
     font-size: 10vw;
     font-variant: small-caps;
@@ -23,7 +27,7 @@ header > h1 {
 
 header > p {
     color: white;
-    padding: 0px 0px 18px 0px;
+    padding: 0px 0px 50px 0px;
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal
@@ -39,10 +43,23 @@ a:hover {
     text-decoration: underline;
 }
 
-main > section {
-    font-size: 3.5vw;
+section {
+    font-size: 4vw;
     font-family: "Sriracha";
     margin: 70px 0px 70px 35px;
+    line-height: 2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: black;
+    color: white;
 }
 
 footer {
@@ -51,4 +68,5 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 5px;
+    font-size: 2.4vh;
 }
