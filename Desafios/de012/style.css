@@ -46,10 +46,10 @@ a:hover {
 section {
     font-size: 4vw;
     font-family: "Sriracha";
-    margin: 70px 0px 70px 35px;
     line-height: 2em;
     padding-top: 10vh;
     padding-bottom: 10vh;
+    padding-left: 30px;
 }
 
 section.normal {
@@ -58,8 +58,14 @@ section.normal {
 }
 
 section.imagem {
-    background-color: black;
+    background-color: rgb(36, 36, 36);
     color: white;
+    
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.26);
 }
 
 footer {
