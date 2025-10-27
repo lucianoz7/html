@@ -4,6 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: gray;
+            color: white;
+        }
+
+        tr, th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .area {
+            background-color: white;
+            color: black;
+        }
+
+        .num {
+            text-align: center;
+        }
+
+    </style>
 </head>
 <body>
     <table>
@@ -14,9 +43,58 @@
                 <th colspan="2">Notas</th>
                 <th rowspan="2">Média</th>
             </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
         </thead>
         <tbody>
-
+            <tr>
+                <th class="area" rowspan="4">Exatas</th>
+                <td>Matemática</td>
+                <td class="num">9.0</td>
+                <td class="num">7.0</td>
+                <td class="num">8.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td class="num">9.0</td>
+                <td class="num">7.0</td>
+                <td class="num">8.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td class="num">9.0</td>
+                <td class="num">7.0</td>
+                <td class="num">8.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td class="num">9.0</td>
+                <td class="num">7.0</td>
+                <td class="num">8.0</td>
+            </tr>
+            <tr>
+                <th colspan="4">Média de Exatas</th>
+                <th>8.0</th>
+            </tr>
+            <tr>
+                <th class="area" rowspan="2">Humanas</th>
+                <td>Hístoria</td>
+                <td class="num">9.0</td>
+                <td class="num">7.0</td>
+                <td class="num">8.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class="num">9.0</td>
+                <td class="num">7.0</td>
+                <td class="num">8.0</td>
+            </tr>
+            <tr>
+                <th colspan="4">Média de Humanas</th>
+                <th>8.0</th>
+            </tr>
         </tbody>
     </table>
 </body>
