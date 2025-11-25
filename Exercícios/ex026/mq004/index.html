@@ -4,12 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Queries</title>
-    <link rel="stylesheet" href="estilos/style.css" media="all">
-    <link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation: portrait)"> 
-    <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)">
+    <link rel="stylesheet" href="style.css">
     <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: #233eff;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 2px 2px 0px rgb(0, 0, 0);
+            padding: 10px;
+        }
+
         @media screen and (orientation: portrait) {
-            
+            body {
+                background: url(../imagens/cev-portrait.jpg);
+                background-position: center bottom;
+                background-repeat: no-repeat;
+                background-color: #233eff;
+            }
+        }
+
+        @media screen and (orientation: landscape) { 
+            body {
+                background: url(../imagens/cev-landscape.jpg);
+                background-position: left bottom;
+                background-repeat: no-repeat;
+                background-color: #233eff;
+            }
         }
     </style>
 </head>
