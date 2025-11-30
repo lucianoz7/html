@@ -44,3 +44,27 @@ section#login > div#imagem {
 section#login > div#formulario {
     padding: 10px;
 }
+
+div#formulario > h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+span {
+    float: left;
+    margin-right: 6px;
+}
+
+div.campo {
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    font-size: 0.8em;
+}
