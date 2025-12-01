@@ -20,8 +20,8 @@ main {
 
 section#login {
     background-color: white;
-    width: 250px;
-    height: 500px;
+    width: 260px;
+    height: 530px;
     border-radius: 20px;
     position: absolute;
     top: 50%;
@@ -54,17 +54,44 @@ div#formulario > h1 {
 span {
     float: left;
     margin-right: 6px;
+    color: white;
 }
 
-div.campo {
+label {
+    display: none;
+    font-size: 0.9em;
+}
+
+.envio {
     margin-top: 15px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
 }
 
 p {
     font-size: 0.8em;
+}
+
+.envio:hover {
+    background-color: #5f2c82;
+}
+
+a.botao:hover {
+    background-color: rgb(102, 231, 231);
+    color: white;
+}
+
+div.campo {
+    padding: 7px;
+}
+
+input:focus-within {
+    background-color: white;
+    border: none;
+}
+
+input {
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+    background-color: aquamarine;
+    width: calc(100% - 38px);
 }
