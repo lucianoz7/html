@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+    
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkgray;
+}
+
+section > h2 {
+        margin-bottom: 15px;
+    }
+
+
+section {
+        margin: auto;
+        padding: 14px;
+        text-align: justify;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.63);
+        background-color: white;
+        flex-basis: 800px;
+        flex-shrink: 1;
+        flex-grow: 0;
+    }
+
+section > p {
+        text-indent: 25px;
+        margin-bottom: 15px;
+        line-height: 1.4em;
+    }
+
+
+@media screen and (min-width: 0px) and (max-width: 600px) { 
+
+    header {
+        background-color: gray;
+        display: flex;
+        flex-flow: column nowrap;
+        padding: 15px 0px 15px 0px;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
+    }
+
+    header > h1 {
+        color: white;
+        text-align: center;
+        font-size: 2.3em;
+        margin: 0px 0px 10px 0px;
+        padding: 0px 15px 0px 15px;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.637);
+        flex-shrink: 0;
+    }
+    
+    nav {
+        background-color: gray;
+        display: flex;            
+        flex-flow: column nowrap;
+        margin: 3px 18px 3px 6px;
+    }
+
+    .option {
+        margin-right: 0px;
+    }
+
+    a {
+        background-color: rgb(54, 54, 54);
+        color: white;
+        font-size: 0.92em;
+        text-align: center;
+        font-weight: normal;
+        margin: 0px 10px 8px 10px;
+        padding: 12px;
+        border-radius: 5px;
+        text-decoration: none;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    a:hover {
+        transition-duration: 0.3s;
+        background-color: aliceblue;
+        color: black;
+    }
+
+    article {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 10px;
+    }
+
+}
+
+@media screen and (min-width: 600px) { 
+    header {
+        background-color: gray;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding: 15px 0px 15px 0px;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
+    }
+
+    header > h1 {
+        color: white;
+        font-size: 2.3em;
+        margin: 3px 0px 3px 0px;
+        padding: 0px 15px 0px 15px;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.637);
+        flex-shrink: 0;
+    }
+    
+    nav {
+        background-color: gray;
+        display: flex;            
+        flex-flow: row nowrap;
+        align-items: center;
+        margin: 3px 18px 3px 6px;
+    }
+
+    .option {
+        margin-right: 0px;
+    }
+
+    a {
+        background-color: rgb(54, 54, 54);
+        color: white;
+        font-size: 0.92em;
+        font-weight: normal;
+        margin: 0px 10px 0px 10px;
+        padding: 8px;
+        border-radius: 5px;
+        text-decoration: none;
+        flex-shrink: 0;
+        flex-flow: row nowrap;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    a:hover {
+        transition-duration: 0.3s;
+        background-color: aliceblue;
+        color: black;
+    }
+
+    article {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 10px;
+    }
+
+}
