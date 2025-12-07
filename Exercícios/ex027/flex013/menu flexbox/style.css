@@ -13,6 +13,7 @@ body {
 
 section > h2 {
         margin-bottom: 15px;
+        font-size: 1.6em;
     }
 
 
@@ -34,6 +35,21 @@ section > p {
         line-height: 1.4em;
     }
 
+    .option {
+        margin-right: 0px;
+    }
+
+    a:hover {
+        transition-duration: 0.3s;
+        background-color: aliceblue;
+        color: black;
+        transform: translate(-3px, -3px);
+    }
+
+    a:active {
+        background-color: lightsteelblue;
+        transition-duration: 0s;
+    }
 
 @media screen and (min-width: 0px) and (max-width: 600px) { 
 
@@ -62,10 +78,6 @@ section > p {
         margin: 3px 18px 3px 6px;
     }
 
-    .option {
-        margin-right: 0px;
-    }
-
     a {
         background-color: rgb(54, 54, 54);
         color: white;
@@ -77,12 +89,6 @@ section > p {
         border-radius: 5px;
         text-decoration: none;
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    }
-
-    a:hover {
-        transition-duration: 0.3s;
-        background-color: aliceblue;
-        color: black;
     }
 
     article {
@@ -100,7 +106,7 @@ section > p {
         flex-flow: row wrap;
         justify-content: space-between;
         padding: 15px 0px 15px 0px;
-        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
     }
 
     header > h1 {
@@ -120,9 +126,6 @@ section > p {
         margin: 3px 18px 3px 6px;
     }
 
-    .option {
-        margin-right: 0px;
-    }
 
     a {
         background-color: rgb(54, 54, 54);
@@ -138,11 +141,7 @@ section > p {
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
-    a:hover {
-        transition-duration: 0.3s;
-        background-color: aliceblue;
-        color: black;
-    }
+    
 
     article {
         display: flex;
